@@ -1,46 +1,68 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Juliana - Mercado de Alimentos</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
-    body {
-      background-color: #ffffff;
-      color: #333;
-    }
-    header {
-      background-color: #002d72;
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 2rem;
-      height: 60px; /* altura fija para barra */
-    }
-    header .logo-container {
-      display: flex;
-      align-items: center;
-      height: 100%;
-    }
-    header img {
-      height: 60px; /* logo igual altura que la barra */
-      width: auto;
-      margin-right: 1rem;
-    }
-    header h1 {
-      font-size: 1.5rem;
-      line-height: 60px; /* para centrar verticalmente el texto */
-      white-space: nowrap;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: #fff;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prueba La Juliana</title>
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif;
+  }
+  body {
+    background-color: #fff;
+    color: #333;
+  }
+  header {
+    background-color: #002d72;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 60px;
+  }
+  header .logo-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  header img {
+    height: 60px;
+    width: auto;
+    margin-right: 1rem;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    line-height: 60px;
+    white-space: nowrap;
+  }
+  nav a {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 60px;
+    white-space: nowrap;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="La Juliana Logo" />
+      <h1>La Juliana</h1>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Sobre Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#promos">Promociones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+</body>
+</html>
