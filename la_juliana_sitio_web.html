@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Juliana - Mercado de Alimentos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background-color: #002d72;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1567306226416-28f0efdc88ce') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 4rem 2rem;
+    }
+    .section-title {
+      font-size: 2rem;
+      color: #002d72;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .productos, .servicios, .promos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1rem;
+    }
+    footer {
+      background-color: #c8102e;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer p {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="La Juliana Logo">
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Sobre Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#promos">Promociones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>¡Bienvenido a La Juliana!</h1>
+    <p>Tu mercado de confianza, abierto de 8:00 a.m. a 7:30 p.m.</p>
+  </section>
+
+  <section id="nosotros">
+    <h2 class="section-title">Sobre Nosotros</h2>
+    <p style="max-width: 800px; margin: auto; text-align: center;">En La Juliana nos dedicamos a ofrecer alimentos y bebidas frescos de calidad para tu hogar. Somos un mercado comprometido con la comunidad y la buena atención.</p>
+  </section>
+
+  <section id="productos">
+    <h2 class="section-title">Nuestros Productos</h2>
+    <div class="productos">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1571689936042-cb81f8c2f8d7" alt="Frutas">
+        <div class="card-body"><strong>Frutas frescas</strong></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606788075761-4521c43cd389" alt="Verduras">
+        <div class="card-body"><strong>Verduras del día</strong></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1584270354949-1f2b35c59a61" alt="Bebidas">
+        <div class="card-body"><strong>Refrescos y jugos</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <h2 class="section-title">Servicios</h2>
+    <div class="servicios">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1607012411443-1c846b27a6f2" alt="Entrega">
+        <div class="card-body">Entrega local (consultar disponibilidad)</div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1607082349764-79e75d0a197e" alt="Ofertas">
+        <div class="card-body">Ofertas y promociones semanales</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="promos">
+    <h2 class="section-title">Promociones</h2>
+    <div class="promos">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1580910051070-c444eb8b38c5" alt="Combo">
+        <div class="card-body">Combo familiar de frutas - ¡Descuento especial!</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2 class="section-title">Contacto</h2>
+    <p style="text-align: center;">Ubícanos en tu zona. Contáctanos por teléfono o WhatsApp para más detalles.</p>
+    <p style="text-align: center;">Horario: 8:00 a.m. a 7:30 p.m.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 La Juliana. Todos los derechos reservados.</p>
+    <p>Diseñado con ❤️ en blanco, rojo y azul.</p>
+  </footer>
+</body>
+</html>
